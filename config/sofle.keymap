@@ -8,52 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-   flavor = "tap-preferred";
-   tapping-term-ms = <500>;
-};
-
-/ {
-combos {
-        compatible = "zmk,combos";
-	
-	//combo_escape {
-         // timeout-ms = <50>;
-         // key-positions = <0 1>;
-         // bindings = <&kp ESC>;
-     // };
-        
-         combo_tab {
-           timeout-ms = <50>;
-           key-positions = <15 16>;
-           bindings = <&kp TAB>;
-         };
-        
-            // combo_left-control {
-            //   timeout-ms = <50>;
-            //   key-positions = <20 21>;
-           //    bindings = <&kp LCTRL>;
-       // };
-        
-        // combo_layer3 {
-           // timeout-ms = <50>;
-           // key-positions = <4 14>;
-           // bindings = <&mo 3>;
-       // };
-             
-           	    combo_right-command {
-            timeout-ms = <50>;
-            key-positions = <19 20>;
-            bindings = <&kp RCMD>;
-        };
-          //             combo_layer3 {
-         // timeout-ms = <50>;
-         // key-positions = <5 15>;
-         // bindings = <&mo 3>;
-    // };   
-   
-    };
-
 / {
     keymap {
         compatible = "zmk,keymap";
